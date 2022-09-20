@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_zmuda() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <img src="obraz1.gif" />
+
+    <h2>JavaScript</h2>
+    <ol>
+        <li>Powstała w 1995 roku, na mocy porozumienia z firmą Sun Microsystems, w zamian za włączenie do przeglądarki Netscape obsługi technologii Java, język otrzymał oficjalną nazwę JavaScript. W grudniu tego samego roku został zaimplementowany w najnowszej
+            wówczas wersji Navigatora i rozpoczął triumfalny pochód przez Sieć.</li>
+        <li>JavaScript jest przede wszystkim językiem skryptowym – to znaczy interpretowanym. Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. Wystarczy nam do tego przeglądarka internetowa, która ten język
+            obsługuje – czyli w zasadzie każda z liczących się na rynku aplikacji.</li>
+        <li>JS wykonywany jest po stronie klienta, czyli w przegladarce internetowej.</li>
+        <li>Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.</li>
+        <li>JS jest językiem obiektowym.</li>
+    </ol>
+
+    &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br>
+    <textarea cols="75" rows="2" readonly>Otwiera stronę w nowym oknie.</textarea><br>
+    <textarea cols="115" rows="11" readonly>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+		- wywołanie funkcji otwierającej nowe okno przeglądarki
+
+toolbar=no - ukrywa przyciski katalogów
+directories=no - pokazuje lub ukrywa pasek adresowy
+menubar=no - pokazuje lub ukrywa menu przeglądarki
+height=280 - ustawia wysokość okna
+width=160 - ustawia szerokość okna
+top=200 - ustawia położenie okna względem góry ekranu
+left=200 - ustawia położenie okna względem lewej strony ekranu
+	</textarea><br>
+    <textarea cols="65" rows="2" readonly>window.close() - wywołanie funkcji zamykającej okno przeglądarki</textarea>
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_zmuda()" />
+</body>
+
+</html>
