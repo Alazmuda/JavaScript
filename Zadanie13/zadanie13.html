@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>zadanie13</title>
+</head>
+
+<body>
+    <div style="color: indigo;font-size:50px;">
+        <script language="JavaScript">
+            var liczba1 = prompt("Podaj pierwszą liczbę A=", "");
+            var liczba2 = prompt("Podaj drugą liczbę B=", "");
+            var a_z = parseFloat(liczba1);
+            var b_z = parseFloat(liczba2);
+            var w1 = Math.pow(a_z, 3);
+            var w2 = 3 * Math.pow(a_z, 2) * b_z;
+            var w3 = 3 * a_z * Math.pow(b_z, 2);
+            var w4 = Math.pow(b_z, 3);
+            document.write("wczytane liczby: A=" + a_z + " B=" + b_z + "<br>");
+            document.write("(" + a_z + "+" + b_z + ")^3=");
+            document.write(a_z + "^3");
+            document.write("+3*((" + a_z + ")^2)*(" + b_z + ") + ");
+            document.write("3*(" + a_z + ")*((" + b_z + ")^2) + ");
+            document.write(b_z + "^3 = " + w1 + " + " + w2 + " + " + w3 + " + " + w4);
+            document.write(" = " + (w1 + w2 + w3 + w4));
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>zadanie9</title>
+    <script language="JavaScript"></script>
+</head>
+
+<body>
+    <div style="color:green;font-size:59px;">
+        <script language="JavaScript">
+            var dzien1 = prompt("Dzień1=", "");
+            var godz1 = prompt("Godz1=", "");
+            var dzien2 = prompt("Dzień2=", "");
+            var godz2 = prompt("Godz2=", "");
+            var ilosc_sekund_zmu;
+            var D1_zmu = parseFloat(dzien1);
+            var G1_zmu = parseFloat(godz1);
+            var D2_zmu = parseFloat(dzien2);
+            var G2_zmu = parseFloat(godz2);
+            ilosc_sekund_zmu = ((D1_zmu + G1_zmu * 3600) - (D2_zmu + G2_zmu * 3600)) * 24 * 3600;
+            document.write("sekundy=" + Math.abs(ilosc_sekund_zmu) + "sec" + "<br>");
+            document.write("dzien1=" + D1_zmu + "<br>");
+            document.write("godz1=" + G1_zmu + "<br>");
+            document.write("dzien2=" + D2_zmu + "<br>");
+            document.write("godz2=" + G1_zmu + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>

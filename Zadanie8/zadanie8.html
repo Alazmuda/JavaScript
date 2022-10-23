@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>zadanie8</title>
+    <script language="JavaScript"></script>
+</head>
+
+<body>
+    <div style="color:green;font-size:59px;">
+        <script language="JavaScript">
+            var liczba1 = prompt("Dzień1=", "");
+            var liczba2 = prompt("Dzień2=", "");
+            var ilosc_sekund_zmu;
+            var D1_zmu = parseFloat(liczba1);
+            var D2_zmu = parseFloat(liczba2);
+            ilosc_sekund_zmu = (D1_zmu - D2_zmu) * 24 * 3600;
+            document.write("sekundy=" + Math.abs(ilosc_sekund_zmu) + "sec" + "<br>");
+            document.write("dzien1=" + D1_zmu + "<br>");
+            document.write("dzien2=" + D2_zmu + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>
