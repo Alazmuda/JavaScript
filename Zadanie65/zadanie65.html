@@ -1,12 +1,15 @@
-<html>
+<html lang="pl">
 
 <body>
     <div style="color:red;font-size:50px;">
         <script language="JavaScript">
-            if (a_zmu = 1995) {
-                document.write("tak" + "<br>");
-            } else() {
-                document.write("nie" + "<br>");
+            var x = prompt("podaj liczbę x=", "");
+            var a = parseFloat(x);
+            document.write("wczytany rok = " + a + "<br>");
+            if (a == 1995) {
+                document.write("<p style='color:blue'>Brawo znasz rok od kiedy działa Javasript</p>" + "<br>");
+            } else {
+                document.write("<p style='color:red'>Źle musisz jeszcze poczytać</p>" + "<br>");
             }
         </script>
     </div>

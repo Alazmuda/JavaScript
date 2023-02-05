@@ -5,14 +5,21 @@
     <meta charset="utf-8">
     <title> Przykład użycia pętli </title>
     <script language="JavaScript">
-        var x = prompt("podaj szerokość a=", "");
-        var a_zmu = x;
-        var y = prompt("podaj wysokość=", "");
-        var b_zmu = y;
-        for (var i = 1; i <= a_zmu; i++) {
-            document.write("*");
+        var x = prompt("podaj szerokość", "");
+        var kolumny = parseFloat(x);
+        var y = prompt("podaj wysokość", "");
+        var wiersze = parseFloat(y);
+        for (var i = 1; i <= wiersze; i++) {
+            for (var j = 1; j <= kolumny; j++) {
+                if (i == 1 || i == wiersze || j == 1 || j == kolumny) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp;&nbsp;");
+                }
+
+            }
+            document.write("<br>");
         }
-        document.write("<br>");
     </script>
 </head>
 

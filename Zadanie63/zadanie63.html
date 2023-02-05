@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <div style="color:green">Menu</div>
+    <div style="color:red">1 = czerwony</div>
+    <div style="color:blue">2 = niebieski</div>
+    <input id="kolor" /><button onclick="sprawdz_kolor()">sprawdź</button>
+
+    <script language="JavaScript">
+        function sprawdz_kolor() {
+            var a = document.getElementById("kolor").value.toLowerCase();
+            if (a == "1" || a == "czerwony") {
+                document.write("<span style='color:red'> wczytałeś kolor czerwony </span>" + "<br>");
+            } else if (a == "2" || a == "niebieski") {
+                document.write("<span style='color:blue'> wczytałeś kolor niebieski </span>" + "<br>");
+            } else {
+                document.write("<span>brak opcji</span>" + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
