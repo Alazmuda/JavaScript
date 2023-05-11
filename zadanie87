@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title> Przykład ->pokaz formularza </title>
+  <title>Pokaz dzialania formularza</title>
   <script language="JavaScript">
     function setfocus(){
       document.jeden.txt1.focus(); return;
